@@ -4198,6 +4198,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  background-color: #000000;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -4518,7 +4519,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #000000;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
