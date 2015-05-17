@@ -43,7 +43,12 @@ p a:hover{
 }
 
 h2{
+	font-weight: bold;
 	/*text-decoration: underline;*/
+}
+
+h3{
+	font-family: : 'latolight';
 }
 /*
 .headerContainer{
@@ -69,8 +74,16 @@ h2{
 .menu{
 	list-style-type: none;
 	margin: 0;
-	/*font-family: 'Agency;
-	/*font-family: 'Bodoni MT Black';*/
+}
+
+br{
+	background: url('../img/pebbles.svg');
+	background-size: cover;
+}
+
+.dark {
+	/*background: url('../img/background3.svg');
+	background-size: cover;*/
 }
 
 header a{
@@ -80,3 +93,34 @@ header a:hover{
 	color: black !important;
 	    background-color: #e7e7e7;
 }
+
+.work img{
+	width: 150px;
+	height: 150px;
+}
+
+#work-bdo{
+	background: url('../img/bdosys.png');
+	background-size: 150px 150px !important;
+	width: 150px;
+	height: 150px;
+}
+#work-bdo:hover{
+	background: url('../img/bdosys_hover.png') !important;
+	background-size: 150px 150px !important;
+	width: 150px;
+	height: 150px;
+}
+
+#work-asigra{
+	background: url('../img/asigra_1.png');
+	background-size: 150px 150px !important;
+	width: 150px;
+	height: 150px
+}
+#work-asigra:hover{
+	background: url('../img/asigra_hover.png');
+	background-size: 150px 150px !important;
+	width: 150px;
+	height: 150px
+};
