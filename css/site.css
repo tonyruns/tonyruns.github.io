@@ -116,11 +116,11 @@ header a:hover{
 	background: url('../img/asigra_1.png');
 	background-size: 150px 150px !important;
 	width: 150px;
-	height: 150px
+	height: 150px;
 }
 #work-asigra:hover{
 	background: url('../img/asigra_hover.png');
 	background-size: 150px 150px !important;
 	width: 150px;
-	height: 150px
+	height: 150px;
 };
