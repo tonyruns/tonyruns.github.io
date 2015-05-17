@@ -6,3 +6,7 @@
 .body{
 	color: grey;
 }
+
+.header{
+	background: url（'background2.jpg');
+}
