@@ -44,7 +44,16 @@ header{
 .headerFont{
 	color: white !important;
 }
-.test{
+.menu{
 	list-style-type: none;
 	margin: 0;
+	/*font-family: 'Bodoni MT Black';*/
+}
+
+header a{
+	color: white !important;
+}
+header a:hover{
+	color: black !important;
+	    background-color: #e7e7e7;
 }
