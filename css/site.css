@@ -1,3 +1,8 @@
+@font-face{
+	font-family: latolight;
+	src: url('../fonts/Lato-Light.ttf');
+}
+
 .icons{
 	height: 48px;
 	width: 48px;
@@ -23,6 +28,23 @@ header{
 	padding: 0;
 	margin: 0;
 }
+
+p{
+	font-size: 18px;
+	font-family: 'latolight';
+}
+
+p a{
+	color: purple;
+}
+
+p a:hover{
+	color: magenta	;
+}
+
+h2{
+	/*text-decoration: underline;*/
+}
 /*
 .headerContainer{
 	width: 100%;
@@ -47,6 +69,7 @@ header{
 .menu{
 	list-style-type: none;
 	margin: 0;
+	/*font-family: 'Agency;
 	/*font-family: 'Bodoni MT Black';*/
 }
 
