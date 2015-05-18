@@ -6,6 +6,7 @@
 .icons{
 	height: 48px;
 	width: 48px;
+	display: inline-block;
 }
 
 /*body{*/
@@ -14,6 +15,8 @@
 }*/
 body{
 	height:100%;
+		background-color: #ecf0f1;
+
 }
 
 header{
@@ -22,11 +25,17 @@ header{
 	/*height: 395px;*/
 	min-height: 100%;
 	width: 100%;
-	background: url('../img/background3.svg');
+	background: url('../img/background4.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0;
+}
+
+footer{
+	padding: 15px;	
+	height: auto;
+	text-align:  center;;
 }
 
 p{
@@ -48,7 +57,7 @@ h2{
 }
 
 h3{
-	font-family: : 'latolight';
+	font-family: 'latolight';
 }
 /*
 .headerContainer{
@@ -145,4 +154,30 @@ header a:hover{
 	background-size: 150px 150px !important;
 	width: 150px;
 	height: 150px;
-};
+}
+
+.github{
+	background: url('../img/github7.svg') !important;
+	background-size: 48px 48px !important;
+	
+	/*width: 48px;*/
+	/*height: 48px;*/
+}
+
+.linkedin{
+	background: url('../img/linked2.svg') !important;
+	background-size: 48px 48px !important;
+	
+	/*width: 48px;*/
+	/*height: 48px;*/
+}
+
+.email{
+	background: url('../img/email.svg') !important;
+	background-size: 48px 48px !important;
+}
+
+.center{
+	margin-left:auto;
+	margin-right: auto;
+}
