@@ -116,7 +116,7 @@ header a:hover{
 }
 
 .card {
-	width: 40%;
+	width: 100%;
 	border: black 1px solid;
 	margin: 10px;
 	position: relative;
@@ -181,4 +181,11 @@ header a:hover{
 .center{
 	margin-left:auto;
 	margin-right: auto;
+
+}
+@media (min-width: 920px){ 
+	.card{
+		width: 40%;
+
+	}
 }
