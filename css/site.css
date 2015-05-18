@@ -119,6 +119,7 @@ header a:hover{
 	width: 40%;
 	border: black 1px solid;
 	margin: 10px;
+	position: relative;
 }
 
 .work img{
@@ -126,7 +127,7 @@ header a:hover{
 	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
-	display: inline-block;
+	display: block;
 	/*text-align: center;*/
 }
 
