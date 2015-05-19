@@ -3,6 +3,11 @@
 	src: url('../fonts/Lato-Light.ttf');
 }
 
+@font-face{
+	font-size: latobold;
+	src: url('../fonts/Lato-Bold.ttf');
+}
+
 .icons{
 	height: 48px;
 	width: 48px;
@@ -84,6 +89,9 @@ h3{
 	list-style-type: none;
 	margin: 0;
 	z-index: 1;
+	text-transform: uppercase;
+	/*font-family: 'latobold';*/
+
 }
 
 br{
