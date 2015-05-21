@@ -206,6 +206,10 @@ header a:hover{
 	padding: 1px;
 }
 
+.logo:hover{
+	opacity: 0.5 !important;
+}
+
 @media (min-width: 920px){ 
 	.card{
 		width: 40%;
