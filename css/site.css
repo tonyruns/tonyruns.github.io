@@ -4,7 +4,7 @@
 }
 
 @font-face{
-	font-size: latobold;
+	font-family: latobold;
 	src: url('../fonts/Lato-Bold.ttf');
 }
 
@@ -72,7 +72,7 @@ h3{
 
 .headerNav{
 	z-index: 1;
-	background: white transparent!imporant
+	/*background: white transparent !imporant*/
 }
 .headerTitle{
 	position: relative;
