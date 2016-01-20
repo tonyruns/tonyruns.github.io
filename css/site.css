@@ -100,8 +100,16 @@ br{
 }
 
 .dark {
-	background: url('../img/pebbles.svg') !important;
+	background-color: #34495e;
+	/*background: url('../img/pebbles.svg') !important;*/
 	background-size: cover !important;
+	color: white;
+}
+.dark a{
+	color: #2aabd2;
+}
+.dark a:hover{
+	color: #2b669a;
 }
 
 header a{
@@ -112,7 +120,7 @@ header a:hover{
 	    background-color: #e7e7e7;
 }
 
-.work, .project{
+.about, .work, .project{
 	  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -123,6 +131,10 @@ header a:hover{
   justify-content: center;
 }
 
+
+/*.work {*/
+	/*color: white;*/
+/*}*/
 .card {
 	width: 100%;
 	/*border: black 1px solid;*/
