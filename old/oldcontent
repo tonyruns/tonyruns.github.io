@@ -1,0 +1,167 @@
+		<div>
+		<header class="navbar navbar-static-top bs-docs-nav" id="header" role="banner">	
+
+			<div class="container headerNav">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand headerFont" href="index.html">Tony Jin</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse ">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- ADD ICONS TO HERE -->
+						<li>
+							<a class="page-scroll" href="#About">About Me</a>
+						</li>
+					<!-- 	<li>
+							<a class="page-scroll" href="#Skillset">Skillset</a>
+						</li> -->
+						<li>
+							<a class="page-scroll" href="#Work">Work</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#Projects">Projects</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="resume2016.pdf">Resume</a>
+						</li>
+						<!-- <li>
+							<a class="page-scroll" href="#Contact">Contact</a>
+						</li> -->
+					</ul>
+				</nav>
+				<!-- <nav class="bs-navbar-collapse collapse">
+					<nav class="bs-navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="about.html">About Me p2</a>
+						</li>
+						<li>
+							<a href="portfolio.html">Portfolio</a>
+						</li>
+					</ul>
+				</nav> -->
+			</div>
+			<div class="container headerTitle">
+				<b>
+				<ul class="menu">
+				<li>Tony Jin.</li>
+				<li>Software Engineer.</li>
+				<li>Runner.</li>
+				</ul>
+				</b>
+			</div>
+		</header>
+		<!-- <div style="padding: 500px"></div> -->
+			<div class="dark">
+		<div class ="about container" id="About">
+			<h2>About Me</h2>
+			<div class="row">
+				<p>
+					Hi I'm Tony! I'm currently in my 3A term of studying Software Engineering at the University of Waterloo.
+					I recently completed an internship at
+					<a href="http://ca.blackberry.com/home.html">BlackBerry</a>
+					(yes, BlackBerry is still around - their new phone is actually not bad).
+
+				</p>
+				<p>
+					2015 was a pretty big year for me,
+					I had another work term at <a href="http://www.bdosolutions.com/">BDO Solutions</a> as .NET Developer.
+					I also ran my first two marathons and I don't plan on stopping. I'm planning on training for a triathlon this year as well.
+					Skydiving is definitely something else I would love to cross off my bucket list.
+					Some people ask me why I want to do such extreme things, and the truth is I don't think they're extreme at all.
+					Perhaps it's my recklessness that wants to see how far I can push myself. Not only physically but also mentally and intellectually.
+				</p>
+			</div>
+		</div>
+				</div>
+		<br />
+		<div >
+		<section class="container">
+							<h2 id="Work">Work</h2>
+
+				<div class="work container" >
+					<div class="card col-md-5">
+						<a href="http://www.asigra.com/">
+							<img src="img/asigra_1.png" class="logo"/>
+						</a>
+						<p>Working as software developer in Asigra, I fixed bugs and developed features on their cloud backup solution using Java and C++ on client side of the application.
+						</p> 
+					</div>
+					<div class="card col-md-5">
+						<a href="http://www.bdosolutions.com/ca/"><img src="img/bdosys.png" class="logo"/></a>
+						<p> 
+							Formerly Systemgroup Consulting, being a Software Consultant for this company meant developing on the Microsoft platform. Using .NET and MVC I created views and backend services for their client's application. 
+						</p>
+					</div>
+					<div class="card col-md-5">
+						<a href="http://ca.blackberry.com/home.html"><img src="img/blackberrylogo.png" class="logo"/></a>
+						<p>
+							Working as a software test specialist at BlackBerry, I did more than just ensuring their BBM app was acceptable for release. I also provided product design inputs and was in charge of maintaining all test cases.
+						</p>
+					</div>
+				</div>
+		</section>
+
+	</div>
+	<div class="dark">
+	<section class=" container">
+		<h2 id="Projects">Projects</h2>
+		<div class="project container">
+				<div class="card col-md-5">
+					<a href="https://where-should-i-run.herokuapp.com/" ><img src="img/whereshouldirunlogo.png" class="logo"/></a>
+					<p>
+						Where Should I Run? Built using Node.js, UnderArmour API and Google Maps Api, this web app finds users running routes nearest to them given a specific distance.
+					</p>
+				</div>
+				<div class="card col-md-5">
+					<a href="http://tonyruns.com" ><img src="img/tonyruns_main.png" class="logo"/></a>
+					<p> TonyRuns - My personal website about me. In fact you're on it right now!</p>
+				</div>
+					<div class="card col-md-5">
+						<a href="http://tonyruns.github.io/FindTheCountry/" ><img src="img/findthecountry.png" class="logo"/></a>
+						<p>Find the Country is a web application created in a 24-hour hackathon using HTML, CSS, JavaScript, and jQuery. This application tests users about countries of the world by asking them to locate the countries on a map.</p> 
+					</div>
+					<div class="card col-md-5">
+						<a href="https://chrome.google.com/webstore/detail/pg13/gopkaalmpckipgfjdoieohmngoflagaj"><img src="img/wordsensor.png" class="logo"/></a>
+						<p> A simple and clean chrome extension, PG13, that sensors out profane language with friendlier and funnier terms
+						</p>
+					</div>
+				</div>
+	</section>
+		</div>
+<div class="divider"></div>
+		<footer>
+			<div class="row">
+				
+				<a href="https://github.com/tonyruns"></a>
+				<a href="https://ca.linkedin.com/in/tonycjin" class="linkedin icons"></a>
+				<a href="mailto:c23jin@uwaterloo.ca"class="email icons"></a>
+			</div>
+		</footer>
+			</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$('#header').height($(window).height());
+			$(window).resize(function(){
+				$('#header').height($(window).height());
+			});
+
+			//$('#work-Asigra')
+		});
+
+		$(function() {
+		    $('a.page-scroll').bind('click', function(event) {
+		        var $anchor = $(this);
+		        $('html, body').stop().animate({
+		            scrollTop: $($anchor.attr('href')).offset().top
+		        }, 1500, 'easeInOutExpo');
+		        event.preventDefault();
+		    });
+		});
+	</script>

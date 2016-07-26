@@ -44,50 +44,44 @@
 		</script>
 
 		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz6Q6-pip3JkwbzQzIy0Cbq6brW_ybSk4&libraries=places"></script>
 
 		<script src="bower_components/Scrollify/jquery.scrollify.min.js"></script>
-		<script>
-                $(function() {
-                   $.scrollify({
-        section : ".section",
-        interstitialSection : "",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: true,
-        standardScrollElements: "",
-        setHeights: true,
-        overflowScroll: true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {},
-        afterRender:function() {}
-    });
-                });
-         </script>
+		<script src="scripts/main.js"></script>
+
 	</head>
 
 
 	<body>
 
-		<section class="text-center text-middle section">
+		<section class="text-center section cover">
 
 
-			<h1 style="padding-top: 30vh">tony jin</h1>
+			<h1>tony jin</h1>
 			<h3>full stack developer | runner | triathlete</h3>
 
 			<a href="https://github.com/tonyruns">
 				<i class="fa fa-github fa-3"></i>
 			</a>
 			<br>
-			<i>coming soon</i>
+			<i>3rd Year Software Engineer | University of Waterloo</i>
+			<br>
+			<div style="padding-top:20%">
+			<i style="">site currently under construction</i>
+		</div>
 
 		</section>
-		<section class="section">
-			<h3>Work</h3>
+		<section class="section text-center content">
+			<h1>work</h1>
+			<div id="map" class="map-canvas text-middle"></div>
 		</section>
-		<section class="section">
-			<h1>Projects</h1>
+		<section class="section text-center projects">
+			<h1 style="padding-top: 30vh">projects</h1>
+			<i>coming soon</i>
+		</section>
+		<section class="section text-center cover">
+			<h1>race calendar</h1>
+			<i>coming soon</i>
 		</section>
 
 	</body>

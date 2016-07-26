@@ -1,0 +1,23 @@
+section { 
+  height: 100vh; 
+  font-family: 'Oxygen', sans-serif;
+  vertical-align: middle;
+  display: table;
+  width: 100%
+}
+
+
+.map-canvas{
+    height: 70%;
+    width: 80%;
+    margin: auto
+
+}
+
+.cover h1 {
+    padding-top: 30vh;
+  }
+
+.content h1{
+  padding: 5vh;
+}
