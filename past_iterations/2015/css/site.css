@@ -89,7 +89,7 @@ h3{
 	list-style-type: none;
 	margin: 0;
 	z-index: 1;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	/*font-family: 'latobold';*/
 
 }
