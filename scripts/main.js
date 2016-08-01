@@ -26,6 +26,7 @@ $(function() {
 
 	
 	initMap()
+	// makeNav()
 });
 
 
@@ -66,7 +67,62 @@ function initMap(){
 	 bounds.extend(markers[i].getPosition());
 	}
 	map.fitBounds(bounds);
-
-	
-
 }
+
+// var s = {
+//   'height': $(window).height(),
+//   'width': $(window).width()
+// },
+//   scrollItems$ = $('.scroll-item'),
+//   navItems$,
+//   // for caching the scrolling sections
+//   scrollItemsArr = [],              
+//   // for caching the nav items
+//   navItemsArr = []                  
+  
+// // loop through scrolling sections and grab data
+// scrollItems$.each(function(i){      
+//   var this$ = $(this)
+//   // store section data in cache array
+//   scrollItemsArr[i] = {             
+//     id: this.id,
+//     elem: this$,
+//     offset: this$.offset().top,
+//     height: this$.outerHeight(true)
+//   }
+// })
+// build nav dynamically
+// var makeNav = function() {
+
+// 	debugger;
+//   var nav = document.createElement('div')
+//   nav.setAttribute('class',  'scroll-nav-container')
+//   // build nav dots, setting class, href, and title
+//   for ( var i=0; i<scrollItems$.length; i++ ) {
+//     var dot = document.createElement('a')
+//     dot.setAttribute('class', 'scroll-nav-item')
+//     dot.setAttribute('href', '#'+scrollItems$[i].getAttribute('id'))
+//     // dot.setAttribute('title', scrollItems$[i].getAttribute('data-nav-label'))
+//     nav.appendChild(dot)
+//     // store nav dot data in cache array
+//     navItemsArr[i] = dot
+//   }
+//   $('body').append(nav)
+//   navItems$ = $('.scroll-nav-item')
+// }
+// // where the logic happens
+// $(window).on('scroll', function(e){
+	
+//   // var scrollPos = $('body').scrollTop()
+//   // for ( var i=0; i<scrollItemsArr.length; i++ ) {
+//     // var cur = scrollItemsArr[i]
+//     // ensure target section is at least half in view
+//     // if (scrollPos > (cur.offset - viewport.height/2)) {
+//       navItems$.removeClass('active')
+//       var hash = window.location.hash.substring(1);
+//       console.log(hash)
+//       $(navItemsArr[hash]).addClass('active')
+//     // }
+//   // }
+// })
+

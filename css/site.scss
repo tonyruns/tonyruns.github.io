@@ -1,0 +1,51 @@
+$fontDefault: 'Oxygen';
+$bgColor: white;
+$buttonSidePadding: 20px;
+$buttonVertPadding: 10px;
+
+
+section { 
+  height: 100vh; 
+  font-family: $fontDefault, sans-serif;
+  vertical-align: middle;
+  display: table;
+  width: 100%;
+  background: $bgColor;
+}
+
+.btn-theme {
+
+	border-radius: 0px;
+	background: $bgColor;
+	border: black solid 1px;
+	padding-left: $buttonSidePadding;
+	padding-right: $buttonSidePadding;
+	padding-top: $buttonVertPadding;
+	padding-bottom: $buttonVertPadding;
+
+	&:visited { }
+	&:hover { 
+	}
+	&:active { 
+		border: black solid 2px;
+
+	}
+	&:focus{
+		outline: none;
+	}
+}
+
+.map-canvas{
+    height: 70%;
+    width: 80%;
+    margin: auto
+
+}
+
+.cover h1 {
+    padding-top: 30vh;
+  }
+
+.content h1{
+  padding: 5vh;
+}

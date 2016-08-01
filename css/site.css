@@ -1,0 +1,33 @@
+section {
+  height: 100vh;
+  font-family: "Oxygen", sans-serif;
+  vertical-align: middle;
+  display: table;
+  width: 100%;
+  background: white; }
+
+.btn-theme {
+  border-radius: 0px;
+  background: white;
+  border: black solid 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .btn-theme:active {
+    border: black solid 2px; }
+  .btn-theme:focus {
+    outline: none; }
+
+.map-canvas {
+  height: 70%;
+  width: 80%;
+  margin: auto; }
+
+.cover h1 {
+  padding-top: 30vh; }
+
+.content h1 {
+  padding: 5vh; }
+
+/*# sourceMappingURL=site.css.map */
