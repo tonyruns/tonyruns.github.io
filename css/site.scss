@@ -22,12 +22,14 @@ section {
 	padding-right: $buttonSidePadding;
 	padding-top: $buttonVertPadding;
 	padding-bottom: $buttonVertPadding;
+	margin:2px;
 
 	&:visited { }
 	&:hover { 
 	}
 	&:active { 
 		border: black solid 2px;
+		margin:1px;
 
 	}
 	&:focus{
