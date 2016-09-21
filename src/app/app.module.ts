@@ -6,8 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent }  from './pages/home/home';
 import { WorkComponent }  from './pages/work/work';
-import { ProjectsComponent } from './pages/projects/projects';
-import { RacesComponent } from './pages/races/races';
 
 import { routing,
          appRoutingProviders }  from './routes/routing';
@@ -16,9 +14,7 @@ import { routing,
   declarations: [
     AppComponent,
     HomeComponent,
-    WorkComponent,
-    RacesComponent,
-    ProjectsComponent
+    WorkComponent
   ],
   imports: [
     BrowserModule,
