@@ -1,96 +1,35 @@
-<!DOCTYPE html>
-
 <html>
-	<title>Tony Jin</title>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <head>
+    <base href="/">
+    <title>Tony Jin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/site.css">
 
-		<link rel="shortcut icon" href="img/tabicon.ico">
-		<link href="css/site.css" rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
 
 
-		<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<!-- Optional theme -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-		<script src="https://use.fontawesome.com/6c9fde09d0.js"></script>
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-81371208-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
-
-		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz6Q6-pip3JkwbzQzIy0Cbq6brW_ybSk4&libraries=places"></script>
-
-		<script src="bower_components/Scrollify/jquery.scrollify.min.js"></script>
-		<script src="scripts/main.js"></script>
-
-	</head>
 
 
-	<body>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
 
-		<div class="scroll-item-container">
-			<section class="scroll-item text-center section cover" id="1">
-
-
-				<h1>tony jin</h1>
-				<h3>full stack developer | runner | triathlete</h3>
-
-				<a href="https://github.com/tonyruns">
-					<i class="fa fa-github fa-3"></i>
-				</a>
-				<br>
-				<i>3rd Year Software Engineer | University of Waterloo</i>
-				<br>
-				<div class="row" style="padding-top:5%">
-					<div class="col-lg-4"></div>
-					<div class="col-lg-4 text-center">
-						<button class="btn-theme" onclick="$('#2').goTo()">Work</button>
-						<button class="btn-theme" onclick="$('#3').goTo()">Project</button>
-						<button class="btn-theme" onclick="$('#4').goTo()">Races</button>
-					</div>
-					<div class="col-lg-4">
-					</div>
-				</div>	
-				<div style="padding-top:15%">
-					<i style="">site currently under construction</i>
-				</div>
-				
-
-
-			</section>
-			<section class="scroll-item section text-center content" id="2">
-				<h1>work</h1>
-				<div id="map" class="map-canvas text-middle"></div>
-			</section>
-			<section class="scroll-item section text-center projects" id="3">
-				<h1 style="padding-top: 30vh">projects</h1>
-				<i>coming soon</i>
-			</section>
-			<section class="scroll-item section text-center cover" id="4">
-				<h1>race calendar</h1>
-				<i>coming soon</i>
-			</section>
-		</div>
-	</body>
-
-
-
+  </body>
 </html>
