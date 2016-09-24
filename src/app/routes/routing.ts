@@ -3,9 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { WorkComponent }  from '../pages/work/work';
 import { HomeComponent } from '../pages/home/home';
-// import { AppComponent } from '../app.component'
+import { ProjectsComponent } from  '../pages/projects/projects';
 
 const appRoutes: Routes = [
+  {path: "projects", component: ProjectsComponent},
   {path: "work", component: WorkComponent},
   {path: "", component: HomeComponent}
 ]

@@ -1,0 +1,18 @@
+<section class="section cover">
+  <!-- <a> -->
+    <h5 routerLink="/">
+      <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+      home
+    </h5>
+  <!-- </a> -->
+  <h2> Projects</h2>
+  <div class="row">
+    <div class="col-lg-4"  *ngFor="let project of projects">
+      <project-card [project]="project"></project-card>
+      <!-- <div class="card">
+        {{project.title}}
+      </div> -->
+    </div>
+  </div>
+
+</section>

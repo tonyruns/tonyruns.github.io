@@ -2,10 +2,11 @@ $fontDefault: 'Oxygen';
 $bgColor: white;
 $buttonSidePadding: 20px;
 $buttonVertPadding: 10px;
+$borderWidth: 1px;
 
 
-section { 
-  height: 100vh; 
+section {
+  height: 100vh;
   font-family: $fontDefault, sans-serif;
   vertical-align: middle;
   display: table;
@@ -13,11 +14,15 @@ section {
   background: $bgColor;
 }
 
+
 .btn-theme {
 
 	border-radius: 0px;
 	background: $bgColor;
-	border: black solid 1px;
+	// border: black solid 1px;
+  border: $borderWidth solid hsl(0, 100%, 75%);
+  -webkit-animation: rainbow 2s infinite alternate;
+
 	padding-left: $buttonSidePadding;
 	padding-right: $buttonSidePadding;
 	padding-top: $buttonVertPadding;
@@ -25,9 +30,9 @@ section {
 	margin:2px;
 
 	&:visited { }
-	&:hover { 
+	&:hover {
 	}
-	&:active { 
+	&:active {
 		border: black solid 2px;
 		margin:1px;
 
@@ -50,4 +55,37 @@ section {
 
 .content h1{
   padding: 5vh;
+}
+
+.splash {
+	/*display: block;*/
+	/*height: 1000px;*/
+	/*height: 395px;*/
+	min-height: 100%;
+	width: 100%;
+	background: url('../assets/background4.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+}
+
+@-webkit-keyframes rainbow {
+  0% {border-color: hsl(0, 100%, 50%);}
+  100% {border-color: hsl(255, 100%, 50%);}
+}
+
+.rainbow_border{
+  border: 4px solid hsl(0, 100%, 50%);
+  -webkit-animation: rainbow 5s infinite alternate;
+}
+
+
+.card{
+  background: $bgColor;
+  border: 1px solid rgba(0,0,0,.125) solid rgba(0,0,0,.125);
+  position: relative;
+  display: block;
+  padding: 10px
+
 }
