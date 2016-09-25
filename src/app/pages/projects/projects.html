@@ -1,11 +1,13 @@
 <section class="section cover">
-  <!-- <a> -->
-    <h5 routerLink="/">
+  <header class="navbar navbar-static-top bs-docs-nav" id="header" role="banner">
+
+    <h5 routerLink="/" [style.padding]="'10px'">
       <i class="fa fa-angle-double-left" aria-hidden="true"></i>
       home
     </h5>
-  <!-- </a> -->
-  <h2> Projects</h2>
+
+    <h2> Projects</h2>
+  </header>
   <br/>
   <div class="row">
     <div class="col-lg-3"  *ngFor="let project of projects">

@@ -71,4 +71,20 @@ section {
   display: block;
   padding: 10px; }
 
+modal-overlay {
+  top: 100px !important; }
+
+.modal > * {
+  font-family: "Oxygen"; }
+  .modal > * .modal-content {
+    border-radius: 0; }
+  .modal > * modal-footer {
+    display: none; }
+
+.modal-backdrop {
+  background-image: url("assets/pinkgradient.jpg"); }
+
+.fade {
+  transition: 0.25s linear; }
+
 /*# sourceMappingURL=styles.css.map */

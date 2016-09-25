@@ -1,9 +1,13 @@
 <section>
+  <header class="navbar navbar-static-top bs-docs-nav" id="header" role="banner">
 
-  <h5 routerLink="/" [style.padding]="'10px'">
-    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-    home
-  </h5>
+    <h5 routerLink="/" [style.padding]="'10px'">
+      <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+      home
+    </h5>
+
+    <span><h2>Where I've worked</h2></span>
+  </header>
   <div id="map" class="map-canvas text-middle"></div>
 
   <div hidden *ngFor="let job of jobs">

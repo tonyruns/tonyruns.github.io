@@ -1,14 +1,18 @@
 import { Component, OnInit, HostBinding,
          trigger, transition, animate,
-         style, state, ViewContainerRef, ViewEncapsulation} from '@angular/core';
+         style, state, ViewContainerRef, ViewEncapsulation,
+         ViewChild, TemplateRef } from '@angular/core';
 import { Overlay } from 'angular2-modal';
 import { Modal } from 'angular2-modal/plugins/bootstrap';
+// import { InAppModalModule, Modal } from './in-app-plugin/index';
+
 
 
 declare var google: any;
 
 @Component({
   templateUrl: './work.html',
+  // providers: InAppModalModule.getProviders(),
   animations: [
     trigger('routeAnimation', [
       state('*',
@@ -36,9 +40,12 @@ declare var google: any;
 })
 
 export class WorkComponent {
+
+  // @ViewChild('myTemplate', {read: TemplateRef}) private myTemplate: TemplateRef<any>;
+
   constructor(overlay: Overlay, vcRef: ViewContainerRef, public modal: Modal) {
     overlay.defaultViewContainer = vcRef;
-    gmodal = modal;
+    // gmodal = modal;
   }
 
   @HostBinding('@routeAnimation') get routeAnimation() {
@@ -81,9 +88,14 @@ export class WorkComponent {
     marker: null
   }, {
     id:4,
-    company: "Asigra Inc",
+    company: "Sears Holdings Coroporation",
     title: "Full Stack Developer",
-    description: "tasdfasdfasf",
+    description: `<p>
+                    Working at Sears Holding Coporation meant living and working in a foreign country for the first time and this provided me with an abundance of new challenges and excitement.
+                    Initially joining the team as a front-end developer for the Sears Commercial internal admin site, I quickly took ownership of the entire project and worked its backend components as well.
+                    Using Ruby on Rails and AngularJS as the respective back-end and front-end technologies.
+                    ETC ETC ETC
+                  </p>`,
     location: "Chicago, IL",
     crd:  {lat: 41.8500300, lng: -87.6500500},
     time: "May 2016 - August 2016",
@@ -97,20 +109,15 @@ export class WorkComponent {
 
   onClick(job){
     this.modal.alert()
-        .size('md')
-        // .showClose(tr  ue)
         .title(job.company)
+        .size('md')
+        .showClose(true)
         .body(`
-            <h4>Alert is a classic (title/body/footer) 1 button modal window that
-            does not block.</h4>
-            <b>Configuration:</b>
-            <ul>
-                <li>Non blocking (click anywhere outside to dismiss)</li>
-                <li>Size large</li>
-                <li>Dismissed with default keyboard key (ESC)</li>
-                <li>Close wth button click</li>
-                <li>HTML content</li>
-            </ul>`)
+            <h4>${job.title}<h4>
+            <h5>${job.location}
+            <span class="pull-right">${job.time}</span></h5>`
+            +job.description
+          )
         .open();
   }
   attachDescriptions(){
@@ -158,6 +165,7 @@ export class WorkComponent {
   	this.jobs.forEach(function(job){
       var marker = new  google.maps.Marker({
   			position: job.crd,
+        label: job.id+'',
   			map: map
   		});
       job.marker = marker;

@@ -4,7 +4,9 @@ $buttonSidePadding: 20px;
 $buttonVertPadding: 10px;
 $borderWidth: 1px;
 $buttonBorder: 2px;
-
+$pinkGradient: url("assets/pinkgradient.jpg");
+$blueGradient: url("assets/bluegradient.png");
+$greenGradient: url("assets/greengradient.jpg");
 
 section {
   height: 100vh;
@@ -18,20 +20,20 @@ section {
 .btn-project {
   // &:hover {
   border-width: $buttonBorder;
-  border-image: url("assets/bluegradient.png")  30 stretch;
+  border-image: $blueGradient  30 stretch;
   // }
 }
 .btn-work {
   // &:hover {
   border-width: $buttonBorder;
-  border-image: url("assets/pinkgradient.jpg") 30 stretch;
+  border-image: $pinkGradient 30 stretch;
   // }
 }
 
 .btn-race {
   // &:hover {
   border-width: $buttonBorder;
-  border-image: url("assets/greengradient.jpg") 30 stretch;
+  border-image: $greenGradient 30 stretch;
   // }
 }
 
@@ -103,4 +105,29 @@ section {
   display: block;
   padding: 10px
 
+}
+
+
+modal-overlay {
+  top: 100px !important;
+}
+
+.modal > * {
+  font-family: $fontDefault;
+
+  .modal-content {
+    border-radius: 0;
+  }
+
+  modal-footer{
+    display: none;
+  }
+}
+
+.modal-backdrop {
+  background-image: $pinkGradient;
+}
+
+.fade {
+  transition: 0.25s linear;
 }
