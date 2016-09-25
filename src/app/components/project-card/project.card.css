@@ -1,0 +1,15 @@
+.card {
+  border: 1px black solid;
+  width: 98%;
+  align-self: center;
+  /*padding: 5%;*/
+  /*margin: 5%;*/
+}
+
+
+@media (min-width: 920px){
+	.card{
+		width: 100%;
+
+	}
+}

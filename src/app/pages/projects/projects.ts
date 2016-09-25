@@ -43,10 +43,16 @@ import { Component, OnInit, HostBinding,
    }
 
    projects = [{
-     "title": "QuotiMotivate"
+     "title": "QuotiMotivate",
+     "date": "September 2016"
    },{
-     "title": "Where Should I Run?"
+     "title": "Where Should I Run?",
+     "date": "November 2015"
    }, {
-     "title": "Word Sensor"
+     "title": "Word Sensor",
+     "date": "Check this later"
+   }, {
+     "title": "Find the Country",
+     "date": "Check this later"
    }]
  }

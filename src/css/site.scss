@@ -14,14 +14,21 @@ section {
   background: $bgColor;
 }
 
+.btn-project {
+  &:hover {
+    border: 1px solid transparent;
+    border-image: url("../assets/bluegradient.png")  30 stretch;
+  }
+}
+
 
 .btn-theme {
 
 	border-radius: 0px;
 	background: $bgColor;
-	// border: black solid 1px;
-  border: $borderWidth solid hsl(0, 100%, 75%);
-  -webkit-animation: rainbow 2s infinite alternate;
+	border: black solid 1px;
+  // border: $borderWidth solid hsl(0, 100%, 75%);
+  // -webkit-animation: rainbow 2s infinite alternate;
 
 	padding-left: $buttonSidePadding;
 	padding-right: $buttonSidePadding;
@@ -30,9 +37,8 @@ section {
 	margin:2px;
 
 	&:visited { }
-	&:hover {
-	}
-	&:active {
+
+  &:active {
 		border: black solid 2px;
 		margin:1px;
 
