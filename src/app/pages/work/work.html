@@ -4,6 +4,9 @@
     <i class="fa fa-angle-double-left" aria-hidden="true"></i>
     home
   </h5>
-
   <div id="map" class="map-canvas text-middle"></div>
+
+  <div hidden *ngFor="let job of jobs">
+    <button [id]="job.id" (click)="onClick(job)"></button>
+  </div>
 </section>
