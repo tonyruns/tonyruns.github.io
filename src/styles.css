@@ -6,21 +6,28 @@ section {
   width: 100%;
   background: white; }
 
-.btn-project:hover {
-  border: 1px solid transparent;
+.btn-project {
+  border-width: 2px;
   border-image: url("assets/bluegradient.png") 30 stretch; }
+
+.btn-work {
+  border-width: 2px;
+  border-image: url("assets/pinkgradient.jpg") 30 stretch; }
+
+.btn-race {
+  border-width: 2px;
+  border-image: url("assets/greengradient.jpg") 30 stretch; }
 
 .btn-theme {
   border-radius: 0px;
   background: white;
-  border: black solid 1px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 2px; }
   .btn-theme:active {
-    border: black solid 2px;
+    border: black solid buttonHoverBorder;
     margin: 1px; }
   .btn-theme:focus {
     outline: none; }

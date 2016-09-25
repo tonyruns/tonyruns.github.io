@@ -3,6 +3,7 @@ $bgColor: white;
 $buttonSidePadding: 20px;
 $buttonVertPadding: 10px;
 $borderWidth: 1px;
+$buttonBorder: 2px;
 
 
 section {
@@ -15,21 +16,29 @@ section {
 }
 
 .btn-project {
-  &:hover {
-    border: 1px solid transparent;
-    border-image: url("assets/bluegradient.png")  30 stretch;
-  }
+  // &:hover {
+  border-width: $buttonBorder;
+  border-image: url("assets/bluegradient.png")  30 stretch;
+  // }
+}
+.btn-work {
+  // &:hover {
+  border-width: $buttonBorder;
+  border-image: url("assets/pinkgradient.jpg") 30 stretch;
+  // }
 }
 
+.btn-race {
+  // &:hover {
+  border-width: $buttonBorder;
+  border-image: url("assets/greengradient.jpg") 30 stretch;
+  // }
+}
 
 .btn-theme {
 
 	border-radius: 0px;
 	background: $bgColor;
-	border: black solid 1px;
-  // border: $borderWidth solid hsl(0, 100%, 75%);
-  // -webkit-animation: rainbow 2s infinite alternate;
-
 	padding-left: $buttonSidePadding;
 	padding-right: $buttonSidePadding;
 	padding-top: $buttonVertPadding;
@@ -39,7 +48,7 @@ section {
 	&:visited { }
 
   &:active {
-		border: black solid 2px;
+		border: black solid buttonHoverBorder;
 		margin:1px;
 
 	}
