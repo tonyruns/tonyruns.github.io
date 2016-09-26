@@ -9,13 +9,15 @@
     <h2> Projects</h2>
   </header>
   <br/>
-  <div class="row">
-    <div class="col-lg-3"  *ngFor="let project of projects">
-      <project-card [project]="project"></project-card>
+  <!-- <div class="row"> -->
+    <!-- <div class="col-lg-3"  *ngFor="let project of projects"> -->
+    <div *ngFor="let project of projects" class="card">
+      <project-card [project]="project" ></project-card>
+    </div>
       <!-- <div class="card">
         {{project.title}}
       </div> -->
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
 </section>

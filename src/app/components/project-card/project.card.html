@@ -1,10 +1,24 @@
-<div class="card">
-    <!-- <div class="" -->
-    <div class="title">
-      {{project.title}}
-    </div>
+<!-- <div class="card">
+<div class="title">
+{{project.title}}
+</div>
 
-    <div class="description">
+<div class="description">
+{{project.description}}
+</div>
+</div> -->
+<a href="/" class="IndexFamilies-gridItem u-LinkBtn">
+  <div class="IndexFamilies-gridItem-modifiers clearfix">
+
+    <span class="title pull-left"> {{project.title}}</span>
+
+    <!-- <div class=""> -->
+    <div [className]="project.img"> </div>
+  <!-- </div> -->
+
+  <h6 class="date">{{project.date}}</h6>
+    <div class="panel">
       {{project.description}}
     </div>
-</div>
+  </div>
+</a>
