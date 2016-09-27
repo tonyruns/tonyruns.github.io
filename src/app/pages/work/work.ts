@@ -63,7 +63,11 @@ export class WorkComponent {
     id: 1,
     company: "Asigra Inc",
     title: "Software Developer",
-    description: "tasdfasdfasf",
+    description: `<p>
+                    My first co-op placement was in my hometown of Toronto, thus making transitioning into a work life for the first time a lot smoother. However,
+                    there were still many challenges to be faced a work. Using <span class="highlight">Java</span> and <span class="highlight">C++</span> I worked on improving the front-end for Asigra's cloud backup software.
+                    In addition, I also created a <span class="highlight">LAN Discovery tool</span> which analyzes computers and other devices in a user's LAN to determine how much data should be backed up.
+                  </p>`,
     location: "Toronto, ON",
     crd:  {lat: 43.7001100, lng: -79.4163000},
     time: "May 2014 - August 2014",
@@ -72,7 +76,11 @@ export class WorkComponent {
     id:2,
     company: "BDO Solutions",
     title: ".NET Developer",
-    description: "tasdfasdfasf",
+    description: `<p>
+                    When I joined the BDO Solutions for my second work term it was still known as Systemgroup Consulting Inc, before being acquired in a merger.
+                    My work didn't change through the process of the merger though, as I worked on an <span class="highlight">ASP .NET</span> website for one of the company's clients
+                    I also worked on the <span class="highlight">optimization of an emailing service</span>, improving performance by 90%
+                  </p>`,
     location: "Mississauga, ON",
     crd:  {lat: 43.5789000, lng: -79.6583000},
     time: "January 2015 - April 2015",
@@ -81,10 +89,14 @@ export class WorkComponent {
     id:3,
     company: "Blackberry Ltd",
     title: "QA  Analyst",
-    description: "tasdfasdfasf",
-    location: "Toronto, ON",
+    description: `<p>
+                    Joining BlackBerry as a QA Analyst showed me a new perspective of software development. I was required to maintain hundreds of test cases for BlackBerry's BBM using
+                    <span class="highlight"> Git </span> and  <span class="highlight">UTM.</span> In addition, I also oversaw the process of a third party application integration with BlackBerry. Going through a work term of tedious testing definitely allowed me to 
+                    grow as a developer to write and create software with more care and precision.
+                  </p>`,
+    location: "Waterloo, ON",
     crd:  {lat: 43.4668000, lng: -80.5163900},
-    time: "May 2014 - August 2014",
+    time: "September 2015 - December 2015",
     marker: null
   }, {
     id:4,
@@ -93,8 +105,8 @@ export class WorkComponent {
     description: `<p>
                     Working at Sears Holding Coporation meant living and working in a foreign country for the first time and this provided me with an abundance of new challenges and excitement.
                     Initially joining the team as a front-end developer for the Sears Commercial internal admin site, I quickly took ownership of the entire project and worked its backend components as well.
-                    Using Ruby on Rails and AngularJS as the respective back-end and front-end technologies.
-                    ETC ETC ETC
+                    Using <span class="highlight">Ruby on Rails</span> and <span class="highlight">AngularJS</span> as the respective back-end and front-end technologies.
+                    I also created an ad recognition <span class="highlight">Ruby gem </span>using the <span class="highlight">Tesseract OCR</span>to be used company wide"
                   </p>`,
     location: "Chicago, IL",
     crd:  {lat: 41.8500300, lng: -87.6500500},
