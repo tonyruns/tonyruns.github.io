@@ -91,7 +91,7 @@ export class WorkComponent {
     title: "QA  Analyst",
     description: `<p>
                     Joining BlackBerry as a QA Analyst showed me a new perspective of software development. I was required to maintain hundreds of test cases for BlackBerry's BBM using
-                    <span class="highlight"> Git </span> and  <span class="highlight">UTM.</span> In addition, I also oversaw the process of a third party application integration with BlackBerry. Going through a work term of tedious testing definitely allowed me to 
+                    <span class="highlight"> Git </span> and  <span class="highlight">UTM.</span> In addition, I also oversaw the process of a third party application integration with BlackBerry. Going through a work term of tedious testing definitely allowed me to
                     grow as a developer to write and create software with more care and precision.
                   </p>`,
     location: "Waterloo, ON",
@@ -106,7 +106,7 @@ export class WorkComponent {
                     Working at Sears Holding Coporation meant living and working in a foreign country for the first time and this provided me with an abundance of new challenges and excitement.
                     Initially joining the team as a front-end developer for the Sears Commercial internal admin site, I quickly took ownership of the entire project and worked its backend components as well.
                     Using <span class="highlight">Ruby on Rails</span> and <span class="highlight">AngularJS</span> as the respective back-end and front-end technologies.
-                    I also created an ad recognition <span class="highlight">Ruby gem </span>using the <span class="highlight">Tesseract OCR</span>to be used company wide"
+                    I also created an ad recognition <span class="highlight">Ruby gem </span>using the <span class="highlight">Tesseract OCR</span> to be used company wide"
                   </p>`,
     location: "Chicago, IL",
     crd:  {lat: 41.8500300, lng: -87.6500500},
