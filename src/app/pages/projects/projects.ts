@@ -46,21 +46,33 @@ import { Component, OnInit, HostBinding,
      "title": "QuotiMotivate",
      "date": "September 2016",
      "img": "quotimoti",
-     "description": "lalalalal"
+     "type": "Web and Mobile Application",
+     "description": "Plays motivational quotes from notable figures, such as Arnold Schwarzenegger",
+     "technologies": ["Ionic", "Angular2", "Ruby on Rails"],
+     "link": "http://quotimotivate.herokuapp.com/"
    },{
      "title": "Where Should I Run?",
-     "date": "November 2015",
+     "date": "December 2015",
      "img": "wheretorun",
-     "description": "lalalalal"
+     "type": "Web Application",
+     "description": "Finds nearby running routes for your daily runs",
+     "technologies": ["NodeJS", "Express", "PostGres", "UnderArmour API"],
+     "link": "https://where-should-i-run.herokuapp.com/"
    }, {
-     "title": "Word Sensor",
-     "date": "Check this later",
+     "title": "PG13",
+     "date": "November 2014",
      "img": "wordsensor",
-     "description": "lalalalal"
+     "type": "Chrome Extension",
+     "description": "Sensors out profanity on the internet by replacing with comical terms",
+     "technologies": ["JavaScript"],
+     "link" : "https://chrome.google.com/webstore/detail/pg13/gopkaalmpckipgfjdoieohmngoflagaj"
    }, {
      "title": "Find the Country",
-     "date": "Check this later",
+     "date": "March 2014",
      "img": "findthecountry",
-     "description": "lalalalal"
+     "type": "Web Game",
+     "description": "Guessing game for finding countries",
+     "technologies": ["HTML", "JavaScript", "Google Maps API"],
+     "link": "http://wj2ma.github.io/FindtheCountry/"
    }]
  }

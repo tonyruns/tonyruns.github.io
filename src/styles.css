@@ -4,7 +4,7 @@ section {
   vertical-align: middle;
   display: table;
   width: 100%;
-  background: white; }
+  background: #f4f5f6; }
 
 .btn-project {
   border-width: 2px;
@@ -20,7 +20,7 @@ section {
 
 .btn-theme {
   border-radius: 0px;
-  background: white;
+  background: #f4f5f6;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -71,10 +71,14 @@ modal-overlay {
 .fade {
   transition: 0.25s linear; }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; }
+
 .card {
   display: inline-block;
   position: relative;
-  width: 31%;
+  width: 24%;
   min-height: 100%;
   font-weight: 400;
   height: 70vh;
@@ -83,14 +87,14 @@ modal-overlay {
   transition: opacity .1s ease-in-out,-webkit-transform .1s ease-in-out;
   transition: transform .1s ease-in-out,opacity .1s ease-in-out;
   transition: transform .1s ease-in-out,opacity .1s ease-in-out,-webkit-transform .1s ease-in-out;
-  margin: 10px;
   text-align: center;
   border: 1px solid transparent;
   margin: 4px; }
   .card:hover {
-    border: 4px solid transparent;
+    border: 1px solid transparent;
     border-image: url("assets/bluegradient.png") 4 stretch stretch;
-    transition: border 0.1s ease-in; }
+    background: linear-gradient(180deg, #e0e2e6, #fff);
+    transition: background 1000ms linear; }
   @media screen and (max-width: 768px) {
     .card {
       width: 95%;
@@ -113,7 +117,19 @@ modal-overlay {
     letter-spacing: -.5px; }
   .u-LinkBtn .date {
     text-align: left;
-    font-color: black; }
+    color: black; }
+  .u-LinkBtn .project-body {
+    background: transparent;
+    color: black;
+    border: none !important; }
+    .u-LinkBtn .project-body .type {
+      font-weight: 100;
+      font-size: 10px; }
+    .u-LinkBtn .project-body .squished {
+      margin-left: 10%;
+      margin-right: 10%; }
+    .u-LinkBtn .project-body .description {
+      height: 10vh; }
 
 .quotimoti {
   background: url("assets/quotimoti.png") no-repeat; }
@@ -124,11 +140,30 @@ modal-overlay {
 .wheretorun {
   background: url("assets/whereshouldirun.png") no-repeat; }
 
-.quotimoti, .wordsensor, .wheretorun {
+.findthecountry {
+  background: url("assets/findthecountry.png") no-repeat; }
+
+.quotimoti, .wordsensor, .wheretorun, .findthecountry {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 20vh;
   /* Change to the height you need */ }
+
+.banner-back {
+  float: left;
+  padding-left: 10px;
+  position: absolute; }
+
+.work-header {
+  border-bottom: 2px solid transparent;
+  border-image: url("assets/pinkgradient.jpg") 4 stretch stretch; }
+
+.projects-header {
+  border-bottom: 2px solid transparent;
+  border-image: url("assets/bluegradient.png") 4 stretch stretch; }
+
+.races {
+  color: green; }
 
 /*# sourceMappingURL=styles.css.map */

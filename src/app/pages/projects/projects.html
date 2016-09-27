@@ -1,19 +1,20 @@
 <section class="section cover">
-  <header class="navbar navbar-static-top bs-docs-nav" id="header" role="banner">
-
-    <h5 routerLink="/" [style.padding]="'10px'">
-      <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-      home
-    </h5>
-
-    <h2> Projects</h2>
+  <header class="navbar navbar-static-top bs-docs-nav projects-header" id="header" role="banner">
+      <p>
+        <span class="banner-back"  routerLink="/">
+          <h5> <i class="fa fa-angle-double-left" aria-hidden="true"></i> home </h5>
+        </span>
+        <span class="text-center"><h2>Projects</h2></span>
+      </p>
   </header>
   <br/>
   <!-- <div class="row"> -->
     <!-- <div class="col-lg-3"  *ngFor="let project of projects"> -->
+  <div class="projects-container">
     <div *ngFor="let project of projects" class="card">
       <project-card [project]="project" ></project-card>
     </div>
+  </div>
       <!-- <div class="card">
         {{project.title}}
       </div> -->

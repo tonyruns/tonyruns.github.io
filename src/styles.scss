@@ -1,5 +1,6 @@
 $fontDefault: 'Oxygen';
-$bgColor: white;
+// $bgColor: white;
+$bgColor: #f4f5f6;
 $buttonSidePadding: 20px;
 $buttonVertPadding: 10px;
 $borderWidth: 1px;
@@ -111,11 +112,15 @@ modal-overlay {
   transition: 0.25s linear;
 }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .card {
     display: inline-block;
     position: relative;
-    width: 31%;
+    width: 24%;
     min-height: 100%;
     font-weight: 400;
     height: 70vh;
@@ -124,18 +129,17 @@ modal-overlay {
     transition: opacity .1s ease-in-out,-webkit-transform .1s ease-in-out;
     transition: transform .1s ease-in-out,opacity .1s ease-in-out;
     transition: transform .1s ease-in-out,opacity .1s ease-in-out,-webkit-transform .1s ease-in-out;
-    margin: 10px;
+    // margin: 10px;
     text-align: center;
     border: 1px solid transparent;
-    // border: x solid transparent;
     margin: 4px;
-    // border-image: gr;
-    // transition: border-image 1s ease;
 
     &:hover {
-      border: 4px solid transparent;
+      border: 1px solid transparent;
       border-image: $blueGradient 4 stretch stretch;
-      transition: border 0.1s ease-in;
+      background: linear-gradient(180deg,#e0e2e6,#fff);
+      transition: background 1000ms linear;
+      // transition: border 0.25s ease-in, background 1000ms linear;
     }
     @media screen and (max-width: 768px) {
      width: 95%;
@@ -163,7 +167,24 @@ modal-overlay {
   }
   .date{
     text-align: left;
-    font-color: black;
+    color: black;
+  }
+
+  .project-body{
+    background: transparent;
+    color: black;
+    border: none !important;
+    .type {
+      font-weight:100;
+      font-size: 10px;
+    }
+    .squished {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .description {
+      height: 10vh;
+    }
   }
 
 }
@@ -182,9 +203,34 @@ $projectImageHeight: 20vh;
   background: url("assets/whereshouldirun.png") no-repeat;
 }
 
-.quotimoti, .wordsensor, .wheretorun {
+.findthecountry {
+  background: url("assets/findthecountry.png") no-repeat
+}
+
+.quotimoti, .wordsensor, .wheretorun, .findthecountry {
   background-size: cover;
   background-position: center;
   width:100%;
   height: $projectImageHeight; /* Change to the height you need */
+}
+
+
+//HEADER STUFF
+.banner-back {
+  float: left;
+  padding-left: 10px;
+  position: absolute;
+}
+.work-header{
+  border-bottom: 2px solid transparent;
+  border-image: $pinkGradient 4 stretch stretch;
+}
+.projects-header{
+  border-bottom: 2px solid transparent;
+  border-image: $blueGradient 4 stretch stretch;
+}
+
+
+.races {
+  color: green;
 }

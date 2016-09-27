@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent }  from './pages/home/home';
 import { WorkComponent }  from './pages/work/work';
 import { ProjectsComponent } from './pages/projects/projects';
+import { RacesComponent } from './pages/races/races';
+
 import { ProjectCardComponent } from './components/project-card/project.card';
 
 import { routing,
@@ -21,6 +23,7 @@ import { routing,
     HomeComponent,
     WorkComponent,
     ProjectsComponent,
+    RacesComponent,
     ProjectCardComponent
   ],
   imports: [

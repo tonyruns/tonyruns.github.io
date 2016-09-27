@@ -1,13 +1,5 @@
-<!-- <div class="card">
-<div class="title">
-{{project.title}}
-</div>
 
-<div class="description">
-{{project.description}}
-</div>
-</div> -->
-<a href="/" class="IndexFamilies-gridItem u-LinkBtn">
+<a href="{{project.link}}" class="IndexFamilies-gridItem u-LinkBtn">
   <div class="IndexFamilies-gridItem-modifiers clearfix">
 
     <span class="title pull-left"> {{project.title}}</span>
@@ -17,8 +9,19 @@
   <!-- </div> -->
 
   <h6 class="date">{{project.date}}</h6>
-    <div class="panel">
-      {{project.description}}
+    <div class="project-body">
+      <div class="type">{{project.type}}</div>
+      <br />
+      <div class="squished description" >
+        {{project.description}}
+      </div>
+      <br />
+      <div class="type">Technologies</div>
+      <div class="squished">
+        <span *ngFor="let tech of project.technologies; let last = last">
+          {{tech}} <span *ngIf="!last"> / </span>
+        </span>
+      </div>
     </div>
   </div>
 </a>
