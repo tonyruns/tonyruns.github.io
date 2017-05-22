@@ -35,10 +35,21 @@ body, html {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  text-align: right; }
+  .bgimg-1 .source, .bgimg-2 .source, .bgimg-3 .source {
+    position: fixed;
+    top: 95%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    color: white; }
+    .bgimg-1 .source div, .bgimg-2 .source div, .bgimg-3 .source div {
+      padding: 10px; }
 
 .bgimg-1 {
-  /*background-image: url("IMG_2484.jpg");*/
   background-image: url("../images/IMG_2481.JPG");
   min-height: 100%; }
 
@@ -98,8 +109,8 @@ body, html {
         color: #fff; }
 
 .bgimg-3 {
-  /*background-image: url("img_parallax3.jpg");*/
-  min-height: 400px; }
+  min-height: 400px;
+  background-image: url("../images/argyle.jpg"); }
 
 .caption {
   position: absolute;
@@ -116,11 +127,37 @@ body, html {
   font-size: 25px;
   letter-spacing: 10px; }
 
+.work-row {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: left; }
+  .work-row .company {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    width: 200px;
+    margin-left: 10%; }
+  .work-row .description {
+    margin-top: 10%; }
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111; }
+
+.divider {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 25px 80px;
+  text-align: justify; }
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
