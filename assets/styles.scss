@@ -1,6 +1,11 @@
 $primary-color: #777;
 $title-color: #000;
 $clicker-color: rgba(96, 71, 0, 1);
+$github-color: #9B59B6;
+$linkedin-color: #3498db;
+$email-color: #7f8c8d;
+$resume-color: #c0392b;
+
 $primary-font-size: 400 15px/1.8;
 // @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 
@@ -61,7 +66,69 @@ body, html {
 
 .bgimg-2 {
     background-image: url("../images/IMG_2484.JPG");
-    min-height: 400px;
+    min-height: 100%;    // min-height: 100px;
+    .contact-row{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        .contact {
+            // width: 100%;
+            text-align: left;
+            color: $title-color;
+            span.header {
+                    background-color: #111;
+                    color: #fff;
+                    padding: 18px;
+                    font-size: 25px;
+                    letter-spacing: 10px;
+            }
+        }
+        .contact-column {
+            display: flex;
+            flex-direction: column;
+            margin-right: 25%;
+            div {
+                margin: 10% auto;
+                color: $title-color;
+                font-size: 18px;
+                letter-spacing: 6px;
+                width: 200px;
+                text-align: center;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .github {
+                padding:  18px;
+                width: 200px;
+                background-color: $github-color;
+                color: #fff;
+            }
+            .linkedin {
+                padding:  18px;
+                width: 200px;
+                background-color: $linkedin-color;
+                color: #fff;
+            }
+            .email {
+                padding:  18px;
+                width: 200px;
+                background-color: $email-color;
+                color: #fff;
+            }
+            .resume {
+                padding:  18px;
+                width: 200px;
+                background-color: $resume-color;
+                color: #fff;
+            }
+        }
+    }
 }
 
 .bgimg-3 {
