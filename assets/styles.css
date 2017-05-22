@@ -4,9 +4,34 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777; }
 
+.title {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000; }
+  .title span.main {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px; }
+  .title .line-1 {
+    position: relative;
+    top: 60%;
+    width: 20em;
+    margin: 10px auto;
+    border-right: 5px solid rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white; }
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,16 +77,16 @@ h3 {
     background-attachment: scroll; } }
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
 
 @keyframes typewriter {
   from {
     width: 0; }
   to {
-    width: 24em; } }
+    width: 18em; } }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75); }
+    border-right-color: orange; }
   to {
     border-right-color: transparent; } }
 
