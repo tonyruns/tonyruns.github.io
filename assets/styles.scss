@@ -17,6 +17,9 @@ body, html {
     color: $primary-color;   
 }
 
+a { 
+    text-decoration: none;
+}
 
 .title {
     position: absolute;
@@ -83,22 +86,72 @@ body, html {
     min-height: 100%;    // min-height: 100px;
     .contact-row{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: space-between;
         position: absolute;
         left: 0;
-        top: 10%;
+        top: 25%;
         width: 100%;
+        height: 70%;
         .contact {
             // width: 100%;
-            text-align: left;
+            text-align: center;
+            // top: 25%;
             color: $title-color;
-            span.header {
+            .header {
                     background-color: #111;
                     color: #fff;
                     padding: 18px;
                     font-size: 25px;
                     letter-spacing: 10px;
+            }
+        }
+        .link-row {
+            // position: absolute;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 100%;
+            text-align: center;
+            div {
+                // margin: 40% auto;
+                color: $title-color;
+                font-size: 18px;
+                letter-spacing: 6px;
+                width: 200px;
+                text-align: center;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .contact-button {
+                // marig
+                margin-top:10%;
+            }
+            .github {
+                padding:  18px;
+                width: 200px;
+                background-color: $github-color;
+                color: #fff;
+            }
+            .linkedin {
+                padding:  18px;
+                width: 200px;
+                background-color: $linkedin-color;
+                color: #fff;
+            }
+            .email {
+                padding:  18px;
+                width: 200px;
+                background-color: $email-color;
+                color: #fff;
+            }
+            .resume {
+                padding:  18px;
+                width: 200px;
+                background-color: $resume-color;
+                color: #fff;
             }
         }
         .contact-column {
@@ -148,6 +201,35 @@ body, html {
 .bgimg-3 {
     min-height: 400px;
     background-image: url("../images/argyle.jpg");
+    .work {
+        position: absolute;
+        left: 0;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        color: $title-color;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        .company {
+                background-color: #111;
+                color: #fff;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 5px;
+        }
+        .title {
+            color: #fff;
+            position: relative;
+            margin: 10px auto;
+        }
+        .description {
+            width: 65%;
+            background-color: rgba(255, 255, 255, 0.75);
+            padding: 18px;
+        }
+    }
 }
 
 .caption {
@@ -167,34 +249,6 @@ body, html {
     letter-spacing: 10px;
 }
 
-.work-row {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    width: 100%;
-    text-align: left;
-    .company {
-        background-color: #111;
-        color: #fff;
-        padding: 18px;
-        font-size: 25px;
-        // letter-spacing: 10px;
-        width: 200px;
-        margin-left: 10%;
-    }
-    .description {
-        margin-top: 10%;
-    }
-}
-
-// .work {
-//     text-align: left;
-//     color: $title-color;
-// }
-
 h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -211,11 +265,11 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
+// @media only screen and (max-device-width: 1024px) {
+//     .bgimg-1, .bgimg-2, .bgimg-3 {
+//         background-attachment: scroll;
+//     }
+// }
 
 /* Animation */
 .anim-typewriter{
